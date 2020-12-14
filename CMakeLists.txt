@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.17)
+project(practice)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(practice main.cpp)
+add_executable(150-reverse-polish 150-reverse-polish.cpp)
+add_executable(206-reverse-list 206-reverse-list.cpp)
+add_executable(102-level-order-btree binary_tree/102-level-order-btree.cpp)
+add_executable(101-symmetric-tree 101-symmetric-tree.cpp)
+add_executable(56-merge-interval 56-merge-interval.cpp)
+add_executable(57-insert-interval 57-insert-interval.cpp)
+add_executable(7-reverse-int 7-reverse-int.cpp)
+add_executable(226-invert-tree binary_tree/226-invert-tree.cpp)
+add_executable(509-fib dp/509-fib.cpp)
+add_executable(62-unique-paths dp/62-unique-paths.cpp)
+add_executable(64-min-path-sum dp/64-min-path-sum.cpp)
