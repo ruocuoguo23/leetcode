@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 project(practice)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 add_executable(practice main.cpp)
 add_executable(150-reverse-polish 150-reverse-polish.cpp)
@@ -15,3 +15,5 @@ add_executable(226-invert-tree binary_tree/226-invert-tree.cpp)
 add_executable(509-fib dp/509-fib.cpp)
 add_executable(62-unique-paths dp/62-unique-paths.cpp)
 add_executable(64-min-path-sum dp/64-min-path-sum.cpp)
+add_executable(322-coin-change dp/322-coin-change.cpp)
+add_executable(test_filesystem_rename filesystem/test_filesystem_rename.cpp)
