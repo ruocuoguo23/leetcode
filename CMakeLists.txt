@@ -3,9 +3,10 @@ project(practice)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# leet code
 add_executable(practice main.cpp)
 add_executable(150-reverse-polish 150-reverse-polish.cpp)
-add_executable(206-reverse-list 206-reverse-list.cpp)
+add_executable(206-reverse-list linked_list/206-reverse-list.cpp)
 add_executable(102-level-order-btree binary_tree/102-level-order-btree.cpp)
 add_executable(101-symmetric-tree 101-symmetric-tree.cpp)
 add_executable(56-merge-interval 56-merge-interval.cpp)
@@ -16,4 +17,17 @@ add_executable(509-fib dp/509-fib.cpp)
 add_executable(62-unique-paths dp/62-unique-paths.cpp)
 add_executable(64-min-path-sum dp/64-min-path-sum.cpp)
 add_executable(322-coin-change dp/322-coin-change.cpp)
+add_executable(recursion-traversal binary_tree/recursion-traversal.cpp)
+add_executable(21-merge-sorted-list linked_list/21-merge-sorted-list.cpp)
+add_executable(reverse-string string/reverse-string.cpp)
+
+# cpp base
+add_executable(object-model cpp/object-model.cpp)
+
+# cpp11
+add_executable(auto cpp11/auto.cpp)
+add_executable(nulltpr cpp11/nullptr.cpp)
+add_executable(shared_ptr cpp11/shared_ptr.cpp)
+add_executable(array cpp11/array.cpp)
+add_executable(move cpp11/move.cpp)
 add_executable(test_filesystem_rename filesystem/test_filesystem_rename.cpp)

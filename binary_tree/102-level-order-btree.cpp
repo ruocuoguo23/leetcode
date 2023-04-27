@@ -3,7 +3,7 @@
 //
 
 #include <vector>
-#include <stack>
+#include <queue>
 #include <iostream>
 
 using namespace std;
@@ -23,24 +23,24 @@ public:
             return result;
         }
 
-        stack<TreeNode *> cache;
+        queue<TreeNode *> cache;
         cache.push(root);
 
         while (!cache.empty()) {
-            stack<TreeNode *> current_layer = cache;
-            cache = stack<TreeNode *>();
+            queue<TreeNode *> current_layer = cache;
+            cache = queue<TreeNode *>();
             vector<int> current_layer_value;
 
             while (!current_layer.empty()) {
-                auto top = current_layer.top();
+                auto top = current_layer.front();
                 current_layer.pop();
-
-                if (top->right) {
-                    cache.push(top->right);
-                }
 
                 if (top->left) {
                     cache.push(top->left);
+                }
+
+                if (top->right) {
+                    cache.push(top->right);
                 }
 
                 current_layer_value.push_back(top->val);
