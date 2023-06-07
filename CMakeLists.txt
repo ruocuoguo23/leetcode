@@ -5,10 +5,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 # leet code
 add_executable(practice main.cpp)
+add_executable(1-add-two-nums hash/1-add-two-nums.cpp)
 add_executable(150-reverse-polish 150-reverse-polish.cpp)
 add_executable(206-reverse-list linked_list/206-reverse-list.cpp)
 add_executable(102-level-order-btree binary_tree/102-level-order-btree.cpp)
-add_executable(101-symmetric-tree 101-symmetric-tree.cpp)
+add_executable(101-symmetric-tree binary_tree/101-symmetric-tree.cpp)
 add_executable(56-merge-interval 56-merge-interval.cpp)
 add_executable(57-insert-interval 57-insert-interval.cpp)
 add_executable(7-reverse-int 7-reverse-int.cpp)
@@ -20,9 +21,11 @@ add_executable(322-coin-change dp/322-coin-change.cpp)
 add_executable(recursion-traversal binary_tree/recursion-traversal.cpp)
 add_executable(21-merge-sorted-list linked_list/21-merge-sorted-list.cpp)
 add_executable(reverse-string string/reverse-string.cpp)
+add_executable(intersection hash/349-intersection.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
+add_executable(alignment cpp/alignment.cpp)
 
 # cpp11
 add_executable(auto cpp11/auto.cpp)

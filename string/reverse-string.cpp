@@ -8,7 +8,7 @@ using namespace std;
 
 class Solution {
  public:
-    void reverseString(vector<char>& s) {
+    static void reverseString(vector<char>& s) {
         auto size = s.size();
         if (size <= 1) {
             return;
@@ -24,7 +24,7 @@ class Solution {
 
 int main() {
     vector<char> input{'a', 'b', 'c', 'd', 'e'};
-    Solution().reverseString(input);
+    Solution::reverseString(input);
     for (const auto c: input) {
         cout << c << endl;
     }
