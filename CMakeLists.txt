@@ -20,8 +20,10 @@ add_executable(64-min-path-sum dp/64-min-path-sum.cpp)
 add_executable(322-coin-change dp/322-coin-change.cpp)
 add_executable(recursion-traversal binary_tree/recursion-traversal.cpp)
 add_executable(21-merge-sorted-list linked_list/21-merge-sorted-list.cpp)
-add_executable(reverse-string string/reverse-string.cpp)
+add_executable(reverse-string string/344-reverse-string.cpp)
 add_executable(intersection hash/349-intersection.cpp)
+add_executable(27-remove-element array/27-remove-element.cpp)
+add_executable(replace-space string/replace-space.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)

@@ -53,6 +53,22 @@ public:
 
         return cur;
     }
+
+    //
+    static ListNode* reverseListV2(ListNode* head) {
+        ListNode* temp;
+        ListNode* slow = nullptr;
+        ListNode* fast = head;
+
+        while (fast) {
+            temp = fast->next;
+            fast->next = slow;
+            slow = fast;
+            fast = temp;
+        }
+
+        return slow;
+    }
 };
 
 int main() {
@@ -60,6 +76,6 @@ int main() {
     ListNode* input_list = build_list(input);
     show_list_node(input_list);
 
-    ListNode* reverse = Solution::reverseList(input_list);
+    ListNode* reverse = Solution::reverseListV2(input_list);
     show_list_node(reverse);
 }
