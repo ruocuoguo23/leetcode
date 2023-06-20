@@ -28,6 +28,8 @@ add_executable(replace-space string/replace-space.cpp)
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
 add_executable(alignment cpp/alignment.cpp)
+add_executable(stack-and-queue stack_queue/stack-and-queue.cpp)
+add_executable(create-binary-tree binary_tree/create-binary-tree.cpp)
 
 # cpp11
 add_executable(auto cpp11/auto.cpp)
