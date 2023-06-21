@@ -10,11 +10,11 @@ struct TreeNode {
     int val;
     TreeNode* left;
     TreeNode* right;
-    explicit TreeNode(int val): val(val), left(nullptr), right(nullptr) {}
+    TreeNode(int val): val(val), left(nullptr), right(nullptr) {}
 };
 
 TreeNode* create_tree(const vector<int>& data, int index) {
-    // input data format [3,9,20,null,null,15,7]
+    // input data format [null,3,9,20,null,null,15,7]
     //    3
     //   / \
     //  9  20
@@ -37,26 +37,25 @@ TreeNode* create_tree(const vector<int>& data, int index) {
     return cur;
 }
 
-// let's see a traverse
-void pre_order_traverse(TreeNode* root, vector<int>& result) {
-    if (!root) {
-        return;
+class Solution {
+public:
+    bool hasPathSum(TreeNode* root, int sum) {
+        if (!root) {
+            return false;
+        }
+
+        if (root->left == nullptr && root->right == nullptr && root->val == sum) {
+            return true;
+        }
+
+        return hasPathSum(root->left, sum - root->val) || hasPathSum(root->right, sum - root->val);
     }
-
-    result.push_back(root->val);
-    pre_order_traverse(root->left, result);
-    pre_order_traverse(root->right, result);
-}
-
+};
 
 int main() {
-    vector<int> input{-1, 3, 9, 20, -1, -1, 15, 7};
+    vector<int> input{-1,5,4,8,11,-1,13,4,7,2,-1,-1,-1,1};
     TreeNode* root = create_tree(input, 1);
 
-    vector<int> result;
-    pre_order_traverse(root, result);
-    for (auto cur: result) {
-        cout << cur << " ";
-    }
-    cout << endl;
+    bool has_path_flag = Solution().hasPathSum(root, 22);
+    cout << "has path flag: " << has_path_flag <<endl;
 }

@@ -24,12 +24,17 @@ add_executable(reverse-string string/344-reverse-string.cpp)
 add_executable(intersection hash/349-intersection.cpp)
 add_executable(27-remove-element array/27-remove-element.cpp)
 add_executable(replace-space string/replace-space.cpp)
+add_executable(max-depth binary_tree/104-max-depth.cpp)
+add_executable(112-has-path-sum binary_tree/112-has-path-sum.cpp)
+add_executable(236-lowest-common-ancestor binary_tree/236-lowest-common-ancestor.cpp)
+add_executable(455-find-content-children greedy/455-find-content-children.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
 add_executable(alignment cpp/alignment.cpp)
 add_executable(stack-and-queue stack_queue/stack-and-queue.cpp)
 add_executable(create-binary-tree binary_tree/create-binary-tree.cpp)
+add_executable(stl-sort cpp/stl-sort.cpp)
 
 # cpp11
 add_executable(auto cpp11/auto.cpp)

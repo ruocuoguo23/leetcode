@@ -10,11 +10,25 @@ struct TreeNode {
     int val;
     TreeNode* left;
     TreeNode* right;
-    explicit TreeNode(int val): val(val), left(nullptr), right(nullptr) {}
+    TreeNode(int val): val(val), left(nullptr), right(nullptr) {}
+};
+
+class Solution {
+public:
+    int max_depth(TreeNode* root) {
+        if (!root) {
+            return 0;
+        }
+
+        return max(max_depth(root->left)+1, max_depth(root->right)+1);
+    }
+
+private:
+
 };
 
 TreeNode* create_tree(const vector<int>& data, int index) {
-    // input data format [3,9,20,null,null,15,7]
+    // input data format [null,3,9,20,null,null,15,7]
     //    3
     //   / \
     //  9  20
@@ -37,26 +51,12 @@ TreeNode* create_tree(const vector<int>& data, int index) {
     return cur;
 }
 
-// let's see a traverse
-void pre_order_traverse(TreeNode* root, vector<int>& result) {
-    if (!root) {
-        return;
-    }
-
-    result.push_back(root->val);
-    pre_order_traverse(root->left, result);
-    pre_order_traverse(root->right, result);
-}
-
-
 int main() {
+    // first build a b-tree
     vector<int> input{-1, 3, 9, 20, -1, -1, 15, 7};
     TreeNode* root = create_tree(input, 1);
 
-    vector<int> result;
-    pre_order_traverse(root, result);
-    for (auto cur: result) {
-        cout << cur << " ";
-    }
-    cout << endl;
+    // cal it's max depth
+    auto depth = Solution().max_depth(root);
+    cout << "max depth of tree is " << depth << endl;
 }
