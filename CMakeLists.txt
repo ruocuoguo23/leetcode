@@ -28,6 +28,10 @@ add_executable(max-depth binary_tree/104-max-depth.cpp)
 add_executable(112-has-path-sum binary_tree/112-has-path-sum.cpp)
 add_executable(236-lowest-common-ancestor binary_tree/236-lowest-common-ancestor.cpp)
 add_executable(455-find-content-children greedy/455-find-content-children.cpp)
+add_executable(46-permute backtracking/46-permute.cpp)
+add_executable(47-permute-unique backtracking/47-permute-unique.cpp)
+add_executable(77-combine backtracking/77-combine.cpp)
+add_executable(743-network-delay graph/743-network-delay.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
@@ -35,6 +39,7 @@ add_executable(alignment cpp/alignment.cpp)
 add_executable(stack-and-queue stack_queue/stack-and-queue.cpp)
 add_executable(create-binary-tree binary_tree/create-binary-tree.cpp)
 add_executable(stl-sort cpp/stl-sort.cpp)
+add_executable(explict cpp/explict.cpp)
 
 # cpp11
 add_executable(auto cpp11/auto.cpp)
@@ -43,3 +48,6 @@ add_executable(shared_ptr cpp11/shared_ptr.cpp)
 add_executable(array cpp11/array.cpp)
 add_executable(move cpp11/move.cpp)
 add_executable(test_filesystem_rename filesystem/test_filesystem_rename.cpp)
+
+# cpp17
+add_executable(optional cpp17/optional-test.cpp)
