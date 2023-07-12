@@ -15,12 +15,12 @@ public:
         if (!root) {
             return false;
         } else {
-            return isSymmetric(root->left, root->right);
+            return isSymmetricRecurse(root->left, root->right);
         }
     }
 
 private:
-    bool isSymmetric(TreeNode* left, TreeNode* right) {
+    bool isSymmetricRecurse(TreeNode* left, TreeNode* right) {
         if (!left && !right) {
             return true;
         } else if (left && !right) {
@@ -31,7 +31,7 @@ private:
             if (left->val != right->val) {
                 return false;
             } else {
-                return isSymmetric(left->right, right->left) && isSymmetric(left->left, right->right);
+                return isSymmetricRecurse(left->right, right->left) && isSymmetricRecurse(left->left, right->right);
             }
         }
     }

@@ -32,6 +32,9 @@ add_executable(46-permute backtracking/46-permute.cpp)
 add_executable(47-permute-unique backtracking/47-permute-unique.cpp)
 add_executable(77-combine backtracking/77-combine.cpp)
 add_executable(743-network-delay graph/743-network-delay.cpp)
+add_executable(617-merge-trees binary_tree/617-merge-trees.cpp)
+add_executable(543-diameter-of-btree binary_tree/543-diameter-of-btree.cpp)
+add_executable(200-island-number graph/200-island-number.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
