@@ -35,6 +35,11 @@ add_executable(743-network-delay graph/743-network-delay.cpp)
 add_executable(617-merge-trees binary_tree/617-merge-trees.cpp)
 add_executable(543-diameter-of-btree binary_tree/543-diameter-of-btree.cpp)
 add_executable(200-island-number graph/200-island-number.cpp)
+add_executable(19-remove-nth-from-end linked_list/19-remove-nth-from-end.cpp)
+add_executable(26-remove-duplicates array/26-remove-duplicates.cpp)
+add_executable(20-is-valid stack_queue/20-is-valid.cpp)
+add_executable(39-combination-sum backtracking/39-combination-sum.cpp)
+add_executable(5-longest-palindrome dp/5-longest-palindrome.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)

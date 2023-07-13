@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 
+// 一个典型的dfs问题，找到符合条件的节点，搜索整个岛屿并标记，然后继续寻找符合条件的节点。
+
 using namespace std;
 
 class Solution {
