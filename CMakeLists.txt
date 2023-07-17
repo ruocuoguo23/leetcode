@@ -40,6 +40,9 @@ add_executable(26-remove-duplicates array/26-remove-duplicates.cpp)
 add_executable(20-is-valid stack_queue/20-is-valid.cpp)
 add_executable(39-combination-sum backtracking/39-combination-sum.cpp)
 add_executable(5-longest-palindrome dp/5-longest-palindrome.cpp)
+add_executable(141-has-cycle linked_list/141-has-cycle.cpp)
+add_executable(67-add-binary string/67-add-binary.cpp)
+add_executable(279-num-squares dp/279-num-squares.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
@@ -48,6 +51,7 @@ add_executable(stack-and-queue stack_queue/stack-and-queue.cpp)
 add_executable(create-binary-tree binary_tree/create-binary-tree.cpp)
 add_executable(stl-sort cpp/stl-sort.cpp)
 add_executable(explict cpp/explict.cpp)
+add_executable(bit-op cpp/bit-op.cpp)
 
 # cpp11
 add_executable(auto cpp11/auto.cpp)
@@ -56,6 +60,7 @@ add_executable(shared_ptr cpp11/shared_ptr.cpp)
 add_executable(array cpp11/array.cpp)
 add_executable(move cpp11/move.cpp)
 add_executable(test_filesystem_rename filesystem/test_filesystem_rename.cpp)
+add_executable(read-big-vec local_test/read-big-vec.cpp)
 
 # cpp17
 add_executable(optional cpp17/optional-test.cpp)
