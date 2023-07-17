@@ -3,7 +3,7 @@ project(practice)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# leet code
+# leetcode
 add_executable(practice main.cpp)
 add_executable(1-add-two-nums hash/1-add-two-nums.cpp)
 add_executable(150-reverse-polish 150-reverse-polish.cpp)
@@ -43,6 +43,7 @@ add_executable(5-longest-palindrome dp/5-longest-palindrome.cpp)
 add_executable(141-has-cycle linked_list/141-has-cycle.cpp)
 add_executable(67-add-binary string/67-add-binary.cpp)
 add_executable(279-num-squares dp/279-num-squares.cpp)
+add_executable(queue-with-two-stack stack_queue/queue-with-two-stack.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
@@ -52,6 +53,9 @@ add_executable(create-binary-tree binary_tree/create-binary-tree.cpp)
 add_executable(stl-sort cpp/stl-sort.cpp)
 add_executable(explict cpp/explict.cpp)
 add_executable(bit-op cpp/bit-op.cpp)
+add_executable(assert cpp/assert.cpp)
+add_executable(operator cpp/operator.cpp)
+add_executable(has-curve local_test/has-curve.cpp)
 
 # cpp11
 add_executable(auto cpp11/auto.cpp)
@@ -64,3 +68,6 @@ add_executable(read-big-vec local_test/read-big-vec.cpp)
 
 # cpp17
 add_executable(optional cpp17/optional-test.cpp)
+
+# design pattern
+add_executable(singleton design_pattern/singleton.cpp)
