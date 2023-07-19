@@ -18,6 +18,6 @@ int main() {
     cout << "after copy, str is " << str << endl;
 
     // no strings will be copied
-    v.push_back(move(str));
+    v.push_back(std::move(str));
     cout << "after move, str is " << str << endl;
 }

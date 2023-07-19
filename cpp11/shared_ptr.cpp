@@ -36,21 +36,37 @@ int main() {
     // 此时可以自定义对象的析构函数
 
     shared_ptr<int> sp1 = make_shared<int>(100);
-    cout << "sp1 use count is " << sp1.use_count() << endl;
+    cout << "sp1 use count is " << sp1.use_count() << endl; // 1
 
     shared_ptr<int> sp2 = sp1;
     // increase use count
-    cout << "sp1 use count is " << sp1.use_count() << endl;
+    cout << "sp1 use count is " << sp1.use_count() << endl; // 2
 
     // reset decrease use count
     sp2.reset();
 
-    cout << "sp1 use count is " << sp1.use_count() << endl;
+    cout << "sp1 use count is " << sp1.use_count() << endl; // 1
 
     weak_ptr<int> wp1 = sp1;
     if (wp1.expired())
         return 0;
 
-    auto sp3 = wp1.lock();
-    cout << "sp1 use count is " << sp1.use_count() << ", sp3 value is " << *sp3 << endl;
+    auto sp3 = wp1.lock(); // 2
+    cout << "sp1 use count is " << sp1.use_count() << ", sp3 value is " << *sp3 << endl; // 2
+
+    sp3.reset(); // 1
+    cout << "sp1 use count is " << sp1.use_count() << endl; // 1
+
+    sp1.reset();
+    cout << "sp1 use count is " << sp1.use_count() << endl; // 0
+
+    if (wp1.expired()) {
+        cout << "w1 is expired." << endl;
+    }
+
+    if (auto s = wp1.lock()) {
+        cout << "s is available." << endl;
+    } else {
+        cout << "s is not available." << endl;
+    }
 }

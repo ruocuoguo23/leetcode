@@ -14,6 +14,11 @@ public:
         return result;
     }
 
+//    void operator=(const Position& another) = delete;
+    Position& operator=(const Position& another) {
+
+    }
+
     int operator[](int index) {
 //        if (index<0 || index>2) {
 //            return -1;
@@ -49,4 +54,8 @@ int main() {
 
     Position d{3, 4, 5};
     cout << "d[1] = " << d[1] << endl;
+
+    Position e;
+    e = c;
+    cout << "e[1] = " << e[1] << endl;
 }
