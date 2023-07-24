@@ -47,6 +47,8 @@ add_executable(queue-with-two-stack stack_queue/queue-with-two-stack.cpp)
 add_executable(695-max-area graph/695-max-area.cpp)
 add_executable(51-n-queens backtracking/51-n-queens.cpp)
 add_executable(56-sort-intervals greedy/56-sort-interval.cpp)
+add_executable(118-generate array/118-generate.cpp)
+add_executable(36-is-valid-sudo array/36-is-valid-sudo.cpp)
 
 # cpp base
 add_executable(object-model cpp/object-model.cpp)
@@ -59,7 +61,7 @@ add_executable(bit-op cpp/bit-op.cpp)
 add_executable(assert cpp/assert.cpp)
 add_executable(operator cpp/operator.cpp)
 add_executable(has-curve local_test/has-curve.cpp)
-add_executable(template cpp/template.cpp)
+add_executable(template cpp/template/template.cpp)
 add_executable(virtual_test cpp/virtual_test.cpp)
 add_executable(stl-swap cpp/stl-swap.cpp)
 
@@ -75,6 +77,7 @@ add_executable(is_same cpp11/is_same.cpp)
 add_executable(forward cpp11/forward.cpp)
 add_executable(longlong cpp11/longlong.cpp)
 add_executable(constexpr cpp11/constexpr.cpp)
+add_executable(multi_thread cpp11/multi_thread.cpp)
 
 # cpp17
 add_executable(optional cpp17/optional-test.cpp)
