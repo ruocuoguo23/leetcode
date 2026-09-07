@@ -1,3 +1,8 @@
+// 练习：std::array 与 std::forward_list
+// 目标：了解固定长度数组容器和单向链表容器的基本用法。
+// 思路：array 用 fill 统一赋值后遍历；forward_list 连续 push_front 插入名字，
+//       再遍历并读取 front，观察头插法使访问顺序与插入顺序相反。
+
 //
 // Created by wuyang on 2023/1/23.
 //

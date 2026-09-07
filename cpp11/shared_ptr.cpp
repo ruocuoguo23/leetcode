@@ -1,3 +1,10 @@
+// 练习：unique_ptr、shared_ptr 与 weak_ptr
+// 目标：观察独占所有权、共享引用计数及不延长对象生命周期的弱引用。
+// 思路：用 move 转移 unique_ptr 所有权；复制 shared_ptr 增加强引用计数，
+//       reset 减少计数；weak_ptr 用 expired 检查存活状态，用 lock 尝试获得强引用。
+// 要点：unique_ptr 禁止复制但允许移动；weak_ptr::lock 成功后也会增加强引用计数。
+//       示例使用的 make_unique 从 C++14 开始提供。
+
 //
 // Created by wuyang on 2023/1/23.
 //
